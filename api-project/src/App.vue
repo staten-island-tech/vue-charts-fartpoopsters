@@ -12,7 +12,7 @@
 
 
 
-<style >
+<style scoped>
 
 
 </style>
