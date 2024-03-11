@@ -1,11 +1,16 @@
 <template>
-    <Chartthangtest/>
+    <TheWelcome/>
 
 </template>
 
 
-<script setup>
+<script>
 import Chartthangtest from './components/Chartthangtest.vue'
+import TheWelcome from './components/TheWelcome.vue';
+export default {
+  name: 'App',
+  components: { TheWelcome }
+}
 
 </script>
 
