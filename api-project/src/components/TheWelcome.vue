@@ -22,8 +22,8 @@ export default {
   data() {
     return {
       chartData: {
-        labels: [ 'January', 'February', 'March' ],
-        datasets: [ { data: [40, 20, 12] } ]
+        labels: [ 'January', 'February', 'March' , ' poop' ],
+        datasets: [ { data: [40, 20, 12,234] } ]
       },
       chartOptions: {
         responsive: true
