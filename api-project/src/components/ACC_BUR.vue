@@ -1,5 +1,5 @@
 <<template>
-  
+
 </template>
 
 
@@ -19,22 +19,21 @@ async function DOHMH() {
     let response = await fetch("https://data.cityofnewyork.us/resource/knr6-vurn.json");
     let data = await response.json();
 
-    console.log(data[0])
+/*     console.log(data[0])
     thang.value = data
-    console.log(thang.value[0].location_1)
+    console.log(thang.value[0].location_1) */
 
     boroughlist.value = data.map(item => item.borough);
 
-    console.log(boroughlist.value); // this will log an array of boroughlist properties
+    /* console.log(boroughlist.value); // this will log an array of boroughlist properties */
 
     boroughlist.value.forEach(a => console.log(a))
+    
   } catch (error) {
     console.error("Fetching data failed:", error);
   }
 }
 
-onBeforeMount(DOHMH);
-
+onBeforeMount(DOHMH); 
+console.log('poop')
 </script>
-
-
