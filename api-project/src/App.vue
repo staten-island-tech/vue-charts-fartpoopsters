@@ -1,15 +1,15 @@
 <template>
-
-    <ACC_BUR/>
+    <TheWelcome/>
+    <Chartthangtest/>
 </template>
 
 
 <script>
-import ACC_BUR from './components/ACC_BUR.vue';
+import Chartthangtest from './components/Chartthangtest.vue';
 import TheWelcome from './components/TheWelcome.vue';
 export default {
   name: 'App',
-  components: { TheWelcome, ACC_BUR }
+  components: { TheWelcome, Chartthangtest }
 }
 
 </script>
