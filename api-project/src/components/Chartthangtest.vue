@@ -10,7 +10,7 @@ import {ref, onBeforeMount} from "vue"
 ChartJS.register(Title, Tooltip, Legend, BarElement, CategoryScale, LinearScale)
 
 const thang = ref([]);
-const locations = ref([]); // stores the lcoation1 properties from api call
+const boroughlist = ref([]); // stores the lcoation1 properties from api call
 
 async function DOHMH() {
   try {
@@ -19,14 +19,13 @@ async function DOHMH() {
 
     console.log(data[0])
     thang.value = data
- 
     console.log(thang.value[0].location_1)
 
-    locations.value = data.map(item => item.location_1);
+    boroughlist.value = data.map(item => item.borough);
 
-    console.log(locations.value); // this will log an array of location_1 properties
+    console.log(boroughlist.value); // this will log an array of boroughlist properties
 
-    locations.value.forEach(a => console.log(a))
+    boroughlist.value.forEach(a => console.log(a))
   } catch (error) {
     console.error("Fetching data failed:", error);
   }
