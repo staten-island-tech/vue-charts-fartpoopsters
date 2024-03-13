@@ -7,8 +7,9 @@
 </template>
 
 
-<script>
+<script setup>
  import ACC_BUR from '@/components/ACC_BUR.vue';
+ 
 </script>
 
 

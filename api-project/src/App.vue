@@ -1,16 +1,24 @@
 <template>
+  <div id="app">
+    <router-view />
+  </div>
 
-    <ACC_BUR/>
+
+
+  <div class="test10">
+      
+      <nav>
+        <RouterLink to="/">Home</RouterLink>
+        <RouterLink to="/borough">borough acidents</RouterLink>
+      </nav>
+    </div>
 </template>
 
 
-<script>
-import ACC_BUR from './components/ACC_BUR.vue';
-import TheWelcome from './components/TheWelcome.vue';
-export default {
-  name: 'App',
-  components: { TheWelcome, ACC_BUR }
-}
+
+<script setup>
+import { RouterLink, RouterView } from 'vue-router'
+
 
 </script>
 
