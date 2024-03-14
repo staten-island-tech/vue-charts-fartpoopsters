@@ -11,7 +11,7 @@ import {ref, onBeforeMount} from "vue"
 
 ChartJS.register(Title, Tooltip, Legend, BarElement, CategoryScale, LinearScale)
 
-
+// MAYBE GET RID OF ONMUNT SINCE THATS THE PROBEM
 
 
 
