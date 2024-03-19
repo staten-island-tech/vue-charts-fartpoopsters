@@ -7,7 +7,7 @@
 <script setup>
 import { Bar } from 'vue-chartjs'
 import { Chart as ChartJS, Title, Tooltip, Legend, BarElement, CategoryScale, LinearScale } from 'chart.js'
-import {ref, onBeforeMount} from "vue"
+import {ref} from "vue"
 
 ChartJS.register(Title, Tooltip, Legend, BarElement, CategoryScale, LinearScale)
 
@@ -47,8 +47,6 @@ async function DOHMH() {
        else if(a === 'Queens'){Queens1.value  += 1}
        else if(a === 'Yonkers'){Yonkers1.value += 1}
        else if(a === 'Staten Island'){SI2.value += 1}
-    
-
     })
     console.log(Brooklyn1.value)
     console.log(SI1.value + SI2.value)
@@ -56,20 +54,12 @@ async function DOHMH() {
     console.log(Manhattan1.value)
     console.log(Yonkers1.value)
     console.log(Queens1.value)
-
- 
-
-
-
 }
-
-  
-
  catch (error) {
     console.error("Fetching data failed:", error);
   }
 }
 
-onBeforeMount(DOHMH); 
+DOHMH()
 console.log('poop')
 </script>
