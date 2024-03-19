@@ -1,10 +1,10 @@
 <template>
- 
+
 </template>
 
 
 
-<script setup>
+<script>
 import { Bar } from 'vue-chartjs'
 import { Chart as ChartJS, Title, Tooltip, Legend, BarElement, CategoryScale, LinearScale } from 'chart.js'
 import {ref} from "vue"
@@ -37,8 +37,11 @@ async function DOHMH() {
     boroughlist.value = data.map(item => item.borough);
 
     /* console.log(boroughlist.value); // this will log an array of boroughlist properties */
+/* 
+    boroughlist.value.forEach(a => console.log(a)) */
 
-    boroughlist.value.forEach(a => console.log(a))
+    console.log('break')
+    console.log(boroughlist.value.sort())
     boroughlist.value.forEach(a =>{
        if(a === 'SI'){SI1.value += 1}
        else if(a === 'BX'){BX1.value  += 1}
@@ -54,10 +57,23 @@ async function DOHMH() {
     console.log(Manhattan1.value)
     console.log(Yonkers1.value)
     console.log(Queens1.value)
+    
+
+// the labled certina boruoughs as two diffrent names but are the same things like bronx and BX
+
+
+
+
+
+
+
+    
 }
+
  catch (error) {
     console.error("Fetching data failed:", error);
   }
+
 }
 
 DOHMH()
