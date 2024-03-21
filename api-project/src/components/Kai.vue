@@ -18,22 +18,19 @@ async function DOHMH() {
     let data = await response.json();
 
     console.log(data[0])
-    thang.value = data
- 
-    console.log(thang.value[0].injuries_fatalities)
+    return data
 
-    injuries_fatalities.value = data.map(item => item.injuries_fatalities);
-
-    console.log(injuries_fatalities.value); // this will log an array of location_1 properties
-
-    injuries_fatalities.value.forEach(a => console.log(a))
   } catch (error) {
     console.error("Fetching data failed:", error);
   }
 }
-
-onBeforeMount(DOHMH);
-
+thang.value = await DOHMN()
+const yn = [0,0]
+for(i=0; i<thang.value.length; i++){
+  if (thang.value[i].injuries_fatalities == "yes" || "1"){
+ yn[0]+=1
+  }
+}
 </script>
 
 
