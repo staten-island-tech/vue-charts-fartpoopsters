@@ -1,5 +1,5 @@
 <template>
- <main>
+ <main class="poophead2">
 
     <ACC_BUR />
  </main>
