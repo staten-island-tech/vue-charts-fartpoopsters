@@ -1,1 +1,31 @@
+<template>
+  <div id="app">
+    <router-view />
+  </div>
 
+
+
+  <div class="test10">
+      
+      <nav>
+        <RouterLink to="/">Home</RouterLink>
+        <RouterLink to="/borough">borough acidents</RouterLink>
+      </nav>
+    </div>
+</template>
+
+
+
+<script setup>
+import { RouterLink, RouterView } from 'vue-router'
+
+
+</script>
+
+
+
+
+<style >
+
+
+</style>
