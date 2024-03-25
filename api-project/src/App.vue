@@ -1,16 +1,14 @@
 <template>
     <TheWelcome/>
-    <Kai/>
 </template>
 
 
 <script>
-import Kai from './components/Kai.vue';
-import Chartthangtest from './components/Chartthangtest.vue';
-import TheWelcome from './components/TheWelcome.vue';
+
+import TheWelcome from './components/TheKai.vue';
 export default {
   name: 'App',
-  components: { TheWelcome, Kai }
+  components: { TheWelcome }
 }
 
 </script>
