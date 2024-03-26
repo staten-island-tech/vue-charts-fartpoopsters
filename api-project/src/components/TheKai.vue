@@ -1,9 +1,7 @@
 <template>
-<Bar
-    id="my-chart-id"
-    :options="chartOptions"
-    :data="chartData"
-  />
+<div class="container">
+    <Bar v-if="loaded" :data="chartData" />
+  </div>
 
 </template>
 
@@ -17,62 +15,6 @@ import {ref, onBeforeMount} from "vue"
 
 
 ChartJS.register(Title, Tooltip, Legend, BarElement, CategoryScale, LinearScale)
-/* 
-export default {
-  name: 'BarChart',
-  components: { Bar },
-  data() {
-    return {
-      chartData: {
-        labels: [ 'January', 'February', 'March' , ' poop' ],
-        datasets: [ { data: [40, 20, 12,234] } ]
-      },
-      chartOptions: {
-        responsive: true
-      }
-    }
-  }
-}
-
-const injuries_fatalities = ref([]); // stores the lcoation1 properties from api call
-
-async function DOHMH() {
-  try {
-    let response = await fetch("https://data.cityofnewyork.us/resource/knr6-vurn.json");
-    let data = await response.json();
-
-    console.log(data[0])
-    return data
-
-  } catch (error) {
-    console.error("Fetching data failed:", error);
-  }
-}
- const thang = await DOHMH()
-const y = [0]
-const n = [0]
-for(let i=0; i<thang.length; i++){
-  if (thang[i].injuries_fatalities == "Yes" || thang[i].injuries_fatalities === "1"){
- y[0]+=1
-  }
-  else{
-    n[0]+=1
-  }
-}
-console.log (y)
-console.log(thang)
-console.log(thang[6].injuries_fatalities) */
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -166,5 +108,8 @@ for(let i=0; i<thang.length; i++){
 
 <style scoped>
 
-
+.container{
+  width: 800px;
+  height: 800px;
+}
 </style>
