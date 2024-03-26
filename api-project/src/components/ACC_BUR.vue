@@ -1,21 +1,20 @@
 <template>
   <div class="container">
-    <Bar v-if="loaded" :data="chartData" />
+    <Pie v-if="loaded" :data="chartData" />
   </div>
 </template>
 
 
 
 <script>
-import { Bar } from 'vue-chartjs'
-import { Chart as ChartJS, Title, Tooltip, Legend, BarElement, CategoryScale, LinearScale } from 'chart.js'
+import { Chart as ChartJS, ArcElement, Tooltip, Legend } from 'chart.js'
+import { Pie } from 'vue-chartjs'
 
-
-ChartJS.register(Title, Tooltip, Legend, BarElement, CategoryScale, LinearScale)
+ChartJS.register(ArcElement, Tooltip, Legend)
 
 export default {
-  name: 'BarChart',
-  components: { Bar },
+  name: 'PieChart',
+  components: { Pie },
   data: () => ({
     loaded: false,
     chartData: null,

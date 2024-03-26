@@ -1,7 +1,7 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
 import borough from '../views/borough.vue'
-import Kaifile from '../views/Kai_file'
+import Kaifile from '../views/Kaifile.vue'
 
 
 
