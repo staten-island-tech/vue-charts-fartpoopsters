@@ -1,6 +1,8 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
 import borough from '../views/borough.vue'
+import Kaifile from '../views/Kai_file'
+
 
 
 const router = createRouter({
@@ -20,6 +22,12 @@ const router = createRouter({
       path: '/borough',
       name: 'borough',
       component: borough
+    },
+    {
+      path: '/injuries',
+      name: 'injuries',
+      component: Kaifile
+
     }
   ]
 })
