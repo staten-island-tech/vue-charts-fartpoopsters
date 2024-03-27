@@ -10,7 +10,7 @@
       <nav>
         <RouterLink to="/">Home</RouterLink>
         <RouterLink to="/borough">borough acidents</RouterLink>
-        <router-link to="/injuries">click me for </router-link>
+        <router-link to="/injuries"> Injuries </router-link>
       </nav>
     </div>
 </template>

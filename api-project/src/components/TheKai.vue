@@ -58,15 +58,15 @@ for(let i=0; i<thang.length; i++){
       this.chartData = {
         labels: ['Yes','No'],
         datasets: [{
-          label: 'Injuries or deaths caused by collisions involving vehicles managed by Department of Health and Mental Hygiene (DOHMH)',
+          label: 'Were injuries or deaths caused by collisions involving vehicles managed by Department of Health and Mental Hygiene (DOHMH)?',
           data: [y,n],
           backgroundColor: [
-            'rgba(255, 99, 132, 0.2)',
-            'rgba(54, 162, 235, 0.2)',
-            'rgba(255, 206, 86, 0.2)',
-            'rgba(75, 192, 192, 0.2)',
-            'rgba(153, 102, 255, 0.2)',
-            'rgba(255, 159, 64, 0.2)'
+            'rgba(255, 99, 132, 1)',
+            'rgba(54, 162, 235, 1)',
+            'rgba(255, 206, 86, 1)',
+            'rgba(75, 192, 192, 1)',
+            'rgba(153, 102, 255, 1)',
+            'rgba(255, 159, 64, 1)'
           ],
           borderColor: [
             'rgba(255, 99, 132, 1)',
