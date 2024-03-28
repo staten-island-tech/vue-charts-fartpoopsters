@@ -1,7 +1,13 @@
-<script setup>
 
-</script>
 
 <template>
- <p>WELCOME TEST POOP FART</p>
+  <main class="poophead5">
+   
+   <fartpoop23 />
+</main>
 </template>
+
+<script>
+ import fartpoop23 from '@/components/fartpoop23.vue';
+</script>
+
