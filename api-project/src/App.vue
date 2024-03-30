@@ -1,9 +1,4 @@
 <template>
-  <div id="app">
-    <router-view />
-  </div>
-
-
 
   <div class="test10">
       
@@ -13,6 +8,10 @@
         <router-link to="/injuries"> Injuries </router-link>
       </nav>
     </div>
+
+    <div id="app">
+    <router-view />
+  </div>
 </template>
 
 
@@ -27,6 +26,10 @@ import { RouterLink, RouterView } from 'vue-router'
 
 
 <style >
+.test10{
 
+  width: 400px;
+  height: 50px;
+}
 
 </style>
